@@ -15,6 +15,8 @@ package net.foi1y.plusultrasquared;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import net.foi1y.plusultrasquared.network.PlusultrasquaredModVariables;
+import net.foi1y.plusultrasquared.init.PlusultrasquaredModProcedures;
 import net.foi1y.plusultrasquared.init.PlusultrasquaredModItems;
 
 import net.fabricmc.api.ModInitializer;
@@ -29,5 +31,9 @@ public class PlusultrasquaredMod implements ModInitializer {
 
 		PlusultrasquaredModItems.load();
 
+		PlusultrasquaredModProcedures.load();
+
+		PlusultrasquaredModVariables.SyncJoin();
+		PlusultrasquaredModVariables.SyncChangeWorld();
 	}
 }

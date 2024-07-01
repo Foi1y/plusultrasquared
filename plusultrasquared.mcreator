@@ -12,9 +12,38 @@
           "src/main/java/net/foi1y/plusultrasquared/item/AItem.java"
         ]
       }
+    },
+    {
+      "name": "Flightvariable",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "flightvariable",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/FlightvariableProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "flight_variable",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
