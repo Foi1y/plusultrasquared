@@ -1,0 +1,46 @@
+{
+  "mod_elements": [
+    {
+      "name": "A",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/plusultrasquared/models/item/a.json",
+          "src/main/java/net/foi1y/plusultrasquared/item/AItem.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.plusultrasquared.a": "A"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "plusultrasquared",
+    "modName": "plusultrasquared",
+    "version": "1.0.0",
+    "author": "Foily, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.20.1",
+    "modElementsPackage": "net.foi1y.plusultrasquared",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

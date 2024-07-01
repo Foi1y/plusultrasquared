@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "plusultrasquared",
+  "version": "1.0.0",
+  "name": "plusultrasquared",
+  "authors": [
+    "Foily, MCreator"
+  ],
+  "contact": {
+    "homepage": "https://mcreator.net",
+    "sources": ""
+  },
+  "license": "Academic Free License v3.0",
+  "accessWidener": "plusultrasquared.accesswidener",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.foi1y.plusultrasquared.PlusultrasquaredMod"
+    ],
+    "client": [
+      "net.foi1y.plusultrasquared.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "~1.20",
+    "java": ">=17"
+  },
+  "mixins": [
+    "plusultrasquared.mixins.json"
+  ]
+}
