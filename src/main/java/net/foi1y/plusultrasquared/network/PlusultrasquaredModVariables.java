@@ -67,6 +67,7 @@ public class PlusultrasquaredModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "plusultrasquared_mapvars";
 		public boolean flight_variable = false;
+		public String power = "\"\"";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -76,11 +77,13 @@ public class PlusultrasquaredModVariables {
 
 		public void read(CompoundTag nbt) {
 			flight_variable = nbt.getBoolean("flight_variable");
+			power = nbt.getString("power");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("flight_variable", flight_variable);
+			nbt.putString("power", power);
 			return nbt;
 		}
 

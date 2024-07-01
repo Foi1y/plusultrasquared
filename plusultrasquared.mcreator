@@ -16,7 +16,7 @@
     {
       "name": "Flightvariable",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "flightvariable",
       "metadata": {
@@ -42,6 +42,12 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "power",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
