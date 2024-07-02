@@ -15,8 +15,8 @@ import net.foi1y.plusultrasquared.network.PlusultrasquaredModVariables;
 
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 
-public class SelfdetonationProcedure {
-public SelfdetonationProcedure() {
+public class SuicideBombtrigger1Procedure {
+public SuicideBombtrigger1Procedure() {
 UseEntityCallback.EVENT.register((player, level, hand, entity, hitResult) -> {
 if (hand != player).getUsedItemHand())
 return;
