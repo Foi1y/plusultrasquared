@@ -16,7 +16,8 @@
     {
       "name": "Selfdetonation",
       "type": "procedure",
-      "compiles": false,
+      "sortid": 2,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "selfdetonation",
       "metadata": {
@@ -50,6 +51,7 @@
     {
       "name": "SuicideBombtrigger1",
       "type": "procedure",
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "suicide_bombtrigger_1",
@@ -80,19 +82,38 @@
           }
         ]
       }
+    },
+    {
+      "name": "Mhaentity",
+      "type": "tag",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mhaentity",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/plusultrasquared/tags/entity_types/mhaentity.json"
+        ]
+      }
+    },
+    {
+      "name": "QuirkHotbar",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_hotbar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/client/screens/QuirkHotbarOverlay.java"
+        ]
+      },
+      "path": "~/Quirks"
     }
   ],
   "variable_elements": [
     {
-      "name": "flight_variable",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
-      "name": "power",
+      "name": "quirk",
       "type": "string",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "\"\""
     }
   ],
@@ -104,7 +125,17 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Quirks",
+        "children": [
+          {
+            "name": "Hyper Regen",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "plusultrasquared",
@@ -119,7 +150,8 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "fabric-1.20.1",
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.foi1y.plusultrasquared",
     "lockBaseModFiles": false
   },
