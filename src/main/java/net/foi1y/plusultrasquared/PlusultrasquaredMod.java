@@ -29,8 +29,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.foi1y.plusultrasquared.init.PlusultrasquaredModItems;
-
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -48,8 +46,6 @@ public class PlusultrasquaredMod {
 	public PlusultrasquaredMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
-		PlusultrasquaredModItems.REGISTRY.register(bus);
 
 	}
 

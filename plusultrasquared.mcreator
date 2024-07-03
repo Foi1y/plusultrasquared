@@ -1,19 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "A",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "a",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/plusultrasquared/models/item/a.json",
-          "src/main/java/net/foi1y/plusultrasquared/item/AItem.java"
-        ]
-      }
-    },
-    {
       "name": "Selfdetonation",
       "type": "procedure",
       "sortid": 2,
@@ -107,6 +94,37 @@
         ]
       },
       "path": "~/Quirks"
+    },
+    {
+      "name": "WorldCreated",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_created",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/WorldCreatedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -115,13 +133,17 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
+    },
+    {
+      "name": "WorldCreated",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
-      "item.plusultrasquared.a": "A"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",
@@ -131,6 +153,10 @@
         "children": [
           {
             "name": "Hyper Regen",
+            "children": []
+          },
+          {
+            "name": "Explosion",
             "children": []
           }
         ]
