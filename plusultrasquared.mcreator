@@ -3,6 +3,7 @@
     {
       "name": "A",
       "type": "item",
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "a",
@@ -86,6 +87,7 @@
     {
       "name": "Mhaentity",
       "type": "tag",
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mhaentity",
@@ -98,6 +100,7 @@
     {
       "name": "QuirkHotbar",
       "type": "overlay",
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "quirk_hotbar",
@@ -199,7 +202,7 @@
       "name": "WorldCreated",
       "type": "procedure",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "world_created",
       "metadata": {
