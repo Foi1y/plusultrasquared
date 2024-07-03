@@ -228,6 +228,41 @@
           }
         ]
       }
+    },
+    {
+      "name": "Invisibilitylightrefractionarea",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invisibilitylightrefractionarea",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/InvisibilitylightrefractionareaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
