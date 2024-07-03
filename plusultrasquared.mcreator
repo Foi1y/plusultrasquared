@@ -3,6 +3,7 @@
     {
       "name": "A",
       "type": "item",
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "a",
@@ -86,6 +87,7 @@
     {
       "name": "Mhaentity",
       "type": "tag",
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mhaentity",
@@ -98,6 +100,7 @@
     {
       "name": "QuirkHotbar",
       "type": "overlay",
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "quirk_hotbar",
@@ -107,6 +110,93 @@
         ]
       },
       "path": "~/Quirks"
+    },
+    {
+      "name": "Plant",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plant",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/PlantProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Invsibilitylightrefraction",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invsibilitylightrefraction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/InvsibilitylightrefractionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Testruns",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testruns",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/plusultrasquared/models/item/testruns.json",
+          "src/main/java/net/foi1y/plusultrasquared/item/TestrunsItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TestrunsRightclicked",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testruns_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/TestrunsRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -120,6 +210,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.plusultrasquared.testruns": "Testruns",
       "item.plusultrasquared.a": "A"
     }
   },
