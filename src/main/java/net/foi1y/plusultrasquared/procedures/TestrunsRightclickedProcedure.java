@@ -1,13 +1,8 @@
 package net.foi1y.plusultrasquared.procedures;
 
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.foi1y.plusultrasquared.network.PlusultrasquaredModVariables;
+import javax.annotation.Nullable;
 
 public class TestrunsRightclickedProcedure {
 	public static void execute(Entity entity) {

@@ -3,7 +3,6 @@
     {
       "name": "A",
       "type": "item",
-      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "a",
@@ -87,7 +86,6 @@
     {
       "name": "Mhaentity",
       "type": "tag",
-      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mhaentity",
@@ -100,7 +98,6 @@
     {
       "name": "QuirkHotbar",
       "type": "overlay",
-      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "quirk_hotbar",
@@ -147,6 +144,20 @@
       }
     },
     {
+      "name": "Testruns",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testruns",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/plusultrasquared/models/item/testruns.json",
+          "src/main/java/net/foi1y/plusultrasquared/item/TestrunsItem.java"
+        ]
+      }
+    },
+    {
       "name": "Invsibilitylightrefraction",
       "type": "procedure",
       "sortid": 4,
@@ -162,20 +173,6 @@
             "name": "entity",
             "type": "entity"
           }
-        ]
-      }
-    },
-    {
-      "name": "Testruns",
-      "type": "item",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "testruns",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/plusultrasquared/models/item/testruns.json",
-          "src/main/java/net/foi1y/plusultrasquared/item/TestrunsItem.java"
         ]
       }
     },
@@ -197,6 +194,37 @@
           }
         ]
       }
+    },
+    {
+      "name": "WorldCreated",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_created",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/WorldCreatedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -205,6 +233,12 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
+    },
+    {
+      "name": "WorldCreated",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -222,6 +256,10 @@
         "children": [
           {
             "name": "Hyper Regen",
+            "children": []
+          },
+          {
+            "name": "Explosion",
             "children": []
           }
         ]

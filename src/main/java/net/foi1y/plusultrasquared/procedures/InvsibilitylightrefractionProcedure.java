@@ -1,11 +1,8 @@
 package net.foi1y.plusultrasquared.procedures;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.foi1y.plusultrasquared.network.PlusultrasquaredModVariables;
+import javax.annotation.Nullable;
 
 public class InvsibilitylightrefractionProcedure {
 	public static void execute(Entity entity) {
