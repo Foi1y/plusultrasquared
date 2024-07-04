@@ -15,7 +15,7 @@ import net.minecraft.core.BlockPos;
 
 import net.foi1y.plusultrasquared.network.PlusultrasquaredModVariables;
 
-public class PlantProcedure {
+public class PlantfertilizationProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;

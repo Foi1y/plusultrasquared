@@ -128,18 +128,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -177,7 +165,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Quirks/Invisibility"
     },
     {
       "name": "TestrunsRightclicked",
@@ -262,6 +251,65 @@
             "type": "world"
           }
         ]
+      },
+      "path": "~/Quirks/Invisibility"
+    },
+    {
+      "name": "Plantfertilization",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plantfertilization",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/PlantfertilizationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Plantmassareaheal",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plantmassareaheal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/PlantmassareahealProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     }
   ],
@@ -298,6 +346,10 @@
           },
           {
             "name": "Explosion",
+            "children": []
+          },
+          {
+            "name": "Invisibility",
             "children": []
           }
         ]

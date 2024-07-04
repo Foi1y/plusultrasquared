@@ -1,19 +1,24 @@
 package net.foi1y.plusultrasquared.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
-import javax.annotation.Nullable;
+import net.foi1y.plusultrasquared.network.PlusultrasquaredModVariables;
 
 public class TestrunsRightclickedProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity.getCapability(PlusultrasquaredModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlusultrasquaredModVariables.PlayerVariables())).quirk).equals("Invisibility")) {
+		if (((entity.getCapability(PlusultrasquaredModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlusultrasquaredModVariables.PlayerVariables())).quirk).equals("Plant")) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You already Have this Ability"), true);
 		} else {
 			{
-				String _setval = "Invisibility";
+				String _setval = "Plant";
 				entity.getCapability(PlusultrasquaredModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.quirk = _setval;
 					capability.syncPlayerVariables(entity);
