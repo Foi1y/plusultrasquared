@@ -74,6 +74,7 @@ public class PlusultrasquaredModVariables {
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.quirk = original.quirk;
 			if (!event.isWasDeath()) {
+				clone.ScrollSelection = original.ScrollSelection;
 			}
 		}
 
@@ -243,6 +244,7 @@ public class PlusultrasquaredModVariables {
 
 	public static class PlayerVariables {
 		public String quirk = "\"\"";
+		public double ScrollSelection = 1.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -252,12 +254,14 @@ public class PlusultrasquaredModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putString("quirk", quirk);
+			nbt.putDouble("ScrollSelection", ScrollSelection);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
 			quirk = nbt.getString("quirk");
+			ScrollSelection = nbt.getDouble("ScrollSelection");
 		}
 	}
 
@@ -283,6 +287,7 @@ public class PlusultrasquaredModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.quirk = message.data.quirk;
+					variables.ScrollSelection = message.data.ScrollSelection;
 				}
 			});
 			context.setPacketHandled(true);

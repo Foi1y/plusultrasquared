@@ -13,6 +13,71 @@
           "x": 308,
           "y": 218
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hotbar_selection.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DefineScroll1"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 307,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hotbar_selection.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DefineScroll2"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 327,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hotbar_selection.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DefineScroll3"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 347,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hotbar_selection.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DefineScroll4"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 367,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hotbar_selection.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DefineScroll5"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 387,
+          "y": 217
+        }
       }
     ],
     "baseTexture": "",

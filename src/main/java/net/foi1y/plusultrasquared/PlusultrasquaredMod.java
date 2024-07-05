@@ -30,6 +30,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.foi1y.plusultrasquared.init.PlusultrasquaredModTabs;
+import net.foi1y.plusultrasquared.init.PlusultrasquaredModParticleTypes;
 import net.foi1y.plusultrasquared.init.PlusultrasquaredModMobEffects;
 import net.foi1y.plusultrasquared.init.PlusultrasquaredModItems;
 
@@ -56,6 +57,8 @@ public class PlusultrasquaredMod {
 		PlusultrasquaredModTabs.REGISTRY.register(bus);
 
 		PlusultrasquaredModMobEffects.REGISTRY.register(bus);
+
+		PlusultrasquaredModParticleTypes.REGISTRY.register(bus);
 
 	}
 

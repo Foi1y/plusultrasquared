@@ -1,20 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "A",
-      "type": "item",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "a",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/plusultrasquared/models/item/a.json",
-          "src/main/java/net/foi1y/plusultrasquared/item/AItem.java"
-        ]
-      }
-    },
-    {
       "name": "Selfdetonation",
       "type": "procedure",
       "sortid": 2,
@@ -109,7 +95,7 @@
           "src/main/java/net/foi1y/plusultrasquared/client/screens/QuirkHotbarOverlay.java"
         ]
       },
-      "path": "~/Quirks"
+      "path": "~/Quirks/Keybind and Hotbar"
     },
     {
       "name": "Plant",
@@ -143,8 +129,8 @@
       "registry_name": "testruns",
       "metadata": {
         "files": [
-          "src/main/resources/assets/plusultrasquared/models/item/testruns.json",
-          "src/main/java/net/foi1y/plusultrasquared/item/TestrunsItem.java"
+          "src/main/java/net/foi1y/plusultrasquared/item/TestrunsItem.java",
+          "src/main/resources/assets/plusultrasquared/models/item/testruns.json"
         ]
       }
     },
@@ -191,7 +177,7 @@
       "name": "WorldCreated",
       "type": "procedure",
       "sortid": 3,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "world_created",
       "metadata": {
@@ -327,6 +313,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -425,6 +427,174 @@
         ]
       },
       "path": "~/Quirks/Hyper Regen"
+    },
+    {
+      "name": "Healparticle",
+      "type": "particle",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healparticle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/plusultrasquared/particles/healparticle.json",
+          "src/main/java/net/foi1y/plusultrasquared/client/particle/HealparticleParticle.java"
+        ]
+      },
+      "path": "~/Quirks/Hyper Regen"
+    },
+    {
+      "name": "UseAbility",
+      "type": "keybind",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_ability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/network/UseAbilityMessage.java"
+        ]
+      },
+      "path": "~/Quirks/Keybind and Hotbar"
+    },
+    {
+      "name": "ScrollMenu",
+      "type": "keybind",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scroll_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/network/ScrollMenuMessage.java"
+        ]
+      },
+      "path": "~/Quirks/Keybind and Hotbar"
+    },
+    {
+      "name": "DefineScroll1",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "define_scroll_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/DefineScroll1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Keybind and Hotbar"
+    },
+    {
+      "name": "DefineScroll2",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "define_scroll_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/DefineScroll2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Keybind and Hotbar"
+    },
+    {
+      "name": "DefineScroll3",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "define_scroll_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/DefineScroll3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Keybind and Hotbar"
+    },
+    {
+      "name": "DefineScroll4",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "define_scroll_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/DefineScroll4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Keybind and Hotbar"
+    },
+    {
+      "name": "DefineScroll5",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "define_scroll_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/DefineScroll5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Keybind and Hotbar"
+    },
+    {
+      "name": "ScrollMenuOnKeyPressed",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scroll_menu_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/ScrollMenuOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Keybind and Hotbar"
     }
   ],
   "variable_elements": [
@@ -439,12 +609,20 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "ScrollSelection",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "1.0"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
       "effect.plusultrasquared.reverse_heal": "Regen",
+      "key.plusultrasquared.use_ability": "Use Ability",
+      "key.plusultrasquared.scroll_menu": "Scroll Menu",
       "item.plusultrasquared.testruns": "Testruns",
       "item.plusultrasquared.a": "A"
     }
@@ -465,6 +643,10 @@
           },
           {
             "name": "Invisibility",
+            "children": []
+          },
+          {
+            "name": "Keybind and Hotbar",
             "children": []
           }
         ]

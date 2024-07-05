@@ -1,5 +1,7 @@
 {
   "effect.plusultrasquared.reverse_heal": "Regen",
+  "key.plusultrasquared.use_ability": "Use Ability",
+  "key.plusultrasquared.scroll_menu": "Scroll Menu",
   "item.plusultrasquared.testruns": "Testruns",
   "item.plusultrasquared.a": "A"
 }
