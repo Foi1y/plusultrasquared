@@ -191,7 +191,7 @@
       "name": "WorldCreated",
       "type": "procedure",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "world_created",
       "metadata": {
@@ -329,7 +329,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Quirks/Hyper Regen"
     },
     {
       "name": "ReverseHealOnEffectActiveTick",
@@ -352,7 +353,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Quirks/Hyper Regen"
     },
     {
       "name": "ReverseHealSecondtrigger",
@@ -387,7 +389,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Quirks/Hyper Regen"
     },
     {
       "name": "ReverseHeal",
@@ -400,7 +403,28 @@
         "files": [
           "src/main/java/net/foi1y/plusultrasquared/potion/ReverseHealMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Quirks/Hyper Regen"
+    },
+    {
+      "name": "ReverseHealing",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reverse_healing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/ReverseHealingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Hyper Regen"
     }
   ],
   "variable_elements": [
