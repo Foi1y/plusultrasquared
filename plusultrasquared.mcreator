@@ -34,7 +34,7 @@
           }
         ]
       },
-      "path": "~/Suicide Bomb"
+      "path": "~/Custom Quirk ideas for the future/Suicide Bomb"
     },
     {
       "name": "Mhaentity",
@@ -85,7 +85,7 @@
           }
         ]
       },
-      "path": "~/Plant"
+      "path": "~/Custom Quirk ideas for the future/Plant"
     },
     {
       "name": "Testruns",
@@ -229,7 +229,7 @@
           }
         ]
       },
-      "path": "~/Plant"
+      "path": "~/Custom Quirk ideas for the future/Plant"
     },
     {
       "name": "Plantmassareaheal",
@@ -265,7 +265,7 @@
           }
         ]
       },
-      "path": "~/Plant"
+      "path": "~/Custom Quirk ideas for the future/Plant"
     },
     {
       "name": "Regeneration",
@@ -599,7 +599,7 @@
           }
         ]
       },
-      "path": "~/Suicide Bomb"
+      "path": "~/Custom Quirk ideas for the future/Suicide Bomb"
     },
     {
       "name": "HealTriggerStaminaDrain",
@@ -619,7 +619,7 @@
           }
         ]
       },
-      "path": "~/Heal"
+      "path": "~/Custom Quirk ideas for the future/Heal"
     },
     {
       "name": "SelfHeal",
@@ -639,7 +639,7 @@
           }
         ]
       },
-      "path": "~/Heal"
+      "path": "~/Custom Quirk ideas for the future/Heal"
     },
     {
       "name": "StaminaDrainTarget",
@@ -659,7 +659,87 @@
           }
         ]
       },
-      "path": "~/Heal"
+      "path": "~/Custom Quirk ideas for the future/Heal"
+    },
+    {
+      "name": "Levitate",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "levitate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/LevitateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Custom Quirk ideas for the future/Air Walk"
+    },
+    {
+      "name": "Balance",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "balance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/BalanceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Custom Quirk ideas for the future/Air Walk"
+    },
+    {
+      "name": "Stungrenade",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stungrenade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/StungrenadeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quirks/Explosion"
     }
   ],
   "variable_elements": [
@@ -717,16 +797,25 @@
         ]
       },
       {
-        "name": "Plant",
-        "children": []
-      },
-      {
-        "name": "Suicide Bomb",
-        "children": []
-      },
-      {
-        "name": "Heal",
-        "children": []
+        "name": "Custom Quirk ideas for the future",
+        "children": [
+          {
+            "name": "Plant",
+            "children": []
+          },
+          {
+            "name": "Suicide Bomb",
+            "children": []
+          },
+          {
+            "name": "Heal",
+            "children": []
+          },
+          {
+            "name": "Air Walk",
+            "children": []
+          }
+        ]
       }
     ]
   },
