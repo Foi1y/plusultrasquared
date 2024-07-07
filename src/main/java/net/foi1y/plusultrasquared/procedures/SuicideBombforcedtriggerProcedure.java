@@ -12,7 +12,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.foi1y.plusultrasquared.network.PlusultrasquaredModVariables;
 
-public class SelfdetonationProcedure {
+public class SuicideBombforcedtriggerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;

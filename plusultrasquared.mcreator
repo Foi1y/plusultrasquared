@@ -1,41 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "Selfdetonation",
-      "type": "procedure",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "selfdetonation",
-      "metadata": {
-        "files": [
-          "src/main/java/net/foi1y/plusultrasquared/procedures/SelfdetonationProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "SuicideBombtrigger1",
       "type": "procedure",
       "sortid": 1,
@@ -68,7 +33,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Suicide Bomb"
     },
     {
       "name": "Mhaentity",
@@ -118,7 +84,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Plant"
     },
     {
       "name": "Testruns",
@@ -296,7 +263,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Plant"
     },
     {
       "name": "Regeneration",
@@ -595,6 +563,42 @@
         ]
       },
       "path": "~/Quirks/Keybind and Hotbar"
+    },
+    {
+      "name": "SuicideBombforcedtrigger",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suicide_bombforcedtrigger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/SuicideBombforcedtriggerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Suicide Bomb"
     }
   ],
   "variable_elements": [
@@ -650,6 +654,14 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Plant",
+        "children": []
+      },
+      {
+        "name": "Suicide Bomb",
+        "children": []
       }
     ]
   },
