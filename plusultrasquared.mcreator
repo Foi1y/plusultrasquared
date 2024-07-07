@@ -228,7 +228,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Plant"
     },
     {
       "name": "Plantmassareaheal",
@@ -599,6 +600,66 @@
         ]
       },
       "path": "~/Suicide Bomb"
+    },
+    {
+      "name": "HealTriggerStaminaDrain",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_trigger_stamina_drain",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/HealTriggerStaminaDrainProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Heal"
+    },
+    {
+      "name": "SelfHeal",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "self_heal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/SelfHealProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Heal"
+    },
+    {
+      "name": "StaminaDrainTarget",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stamina_drain_target",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/StaminaDrainTargetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Heal"
     }
   ],
   "variable_elements": [
@@ -661,6 +722,10 @@
       },
       {
         "name": "Suicide Bomb",
+        "children": []
+      },
+      {
+        "name": "Heal",
         "children": []
       }
     ]
