@@ -682,30 +682,6 @@
       "path": "~/Custom Quirk ideas for the future/Air Walk"
     },
     {
-      "name": "Balance",
-      "type": "procedure",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "balance",
-      "metadata": {
-        "files": [
-          "src/main/java/net/foi1y/plusultrasquared/procedures/BalanceProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Custom Quirk ideas for the future/Air Walk"
-    },
-    {
       "name": "Stungrenade",
       "type": "procedure",
       "sortid": 36,
@@ -740,6 +716,90 @@
         ]
       },
       "path": "~/Quirks/Explosion"
+    },
+    {
+      "name": "Explosivespeedorflight",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosivespeedorflight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/ExplosivespeedorflightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quirks/Explosion"
+    },
+    {
+      "name": "AirSkip",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_skip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/AirSkipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Custom Quirk ideas for the future/Air Walk"
+    },
+    {
+      "name": "AirControl",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_control",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/AirControlProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Custom Quirk ideas for the future/Air Walk"
     }
   ],
   "variable_elements": [

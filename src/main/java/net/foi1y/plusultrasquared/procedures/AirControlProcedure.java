@@ -13,7 +13,7 @@ import net.minecraft.core.registries.Registries;
 import net.foi1y.plusultrasquared.network.PlusultrasquaredModVariables;
 import net.foi1y.plusultrasquared.PlusultrasquaredMod;
 
-public class BalanceProcedure {
+public class AirControlProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
