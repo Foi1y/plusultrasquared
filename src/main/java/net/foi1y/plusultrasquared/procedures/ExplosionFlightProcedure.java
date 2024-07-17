@@ -20,38 +20,13 @@ import net.foi1y.plusultrasquared.PlusultrasquaredMod;
 import java.util.List;
 import java.util.Comparator;
 
-public class ExplosivespeedorflightProcedure {
+public class ExplosionFlightProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if (((entity.getCapability(PlusultrasquaredModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlusultrasquaredModVariables.PlayerVariables())).quirk).equals("Explosion")) {
-			if (entity.onGround()) {
-				entity.getPersistentData().putBoolean("speed", true);
-				if (world instanceof Level _level && !_level.isClientSide())
-					_level.explode(null,
-							(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getX() * 2), 0,
-							(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ() * 1), 5,
-							Level.ExplosionInteraction.NONE);
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.EXPLOSION, x, y, z, 30, 3, 3, 3, 1);
-				entity.setDeltaMovement(new Vec3((entity.getLookAngle().x * 2), 0, (entity.getLookAngle().z * 1)));
-				{
-					final Vec3 _center = new Vec3(x, y, z);
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(7 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-					for (Entity entityiterator : _entfound) {
-						if (!(entityiterator == entity) && entity instanceof LivingEntity && !(entityiterator instanceof TamableAnimal _tamIsTamedBy && entity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)) {
-							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.EXPLOSION)), 8);
-						}
-					}
-				}
-				PlusultrasquaredMod.queueServerWork(20, () -> {
-					entity.getPersistentData().putBoolean("speed", false);
-				});
-			}
-		} else {
-			if (entity.isShiftKeyDown()) {
+			if (!entity.onGround()) {
 				entity.getPersistentData().putBoolean("flight", true);
-			} else {
 				if (entity.getPersistentData().getBoolean("flight") == true) {
 					if (world instanceof Level _level && !_level.isClientSide())
 						_level.explode(null,
@@ -60,8 +35,8 @@ public class ExplosivespeedorflightProcedure {
 								(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ() * 1),
 								5, Level.ExplosionInteraction.NONE);
 					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.SMALL_FLAME, x, y, z, 30, 3, 3, 3, 1);
-					entity.setDeltaMovement(new Vec3((entity.getLookAngle().x + 2), 3, (entity.getLookAngle().x + 1)));
+						_level.sendParticles(ParticleTypes.EXPLOSION, x, y, z, 30, 3, 3, 3, 1);
+					entity.setDeltaMovement(new Vec3((entity.getLookAngle().x + 2), 1, (entity.getLookAngle().x + 1)));
 					{
 						final Vec3 _center = new Vec3(x, y, z);
 						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(7 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();

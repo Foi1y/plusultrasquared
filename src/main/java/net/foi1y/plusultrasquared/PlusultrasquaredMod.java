@@ -33,6 +33,7 @@ import net.foi1y.plusultrasquared.init.PlusultrasquaredModTabs;
 import net.foi1y.plusultrasquared.init.PlusultrasquaredModParticleTypes;
 import net.foi1y.plusultrasquared.init.PlusultrasquaredModMobEffects;
 import net.foi1y.plusultrasquared.init.PlusultrasquaredModItems;
+import net.foi1y.plusultrasquared.init.PlusultrasquaredModEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -53,6 +54,7 @@ public class PlusultrasquaredMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		PlusultrasquaredModItems.REGISTRY.register(bus);
+		PlusultrasquaredModEntities.REGISTRY.register(bus);
 
 		PlusultrasquaredModTabs.REGISTRY.register(bus);
 

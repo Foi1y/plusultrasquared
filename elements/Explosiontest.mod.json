@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "Z",
+    "keyBindingName": "Explosiontest",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "ExplosiontestOnKeyPressed"
+    }
+  }
+}

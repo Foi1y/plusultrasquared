@@ -16,6 +16,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.foi1y.plusultrasquared.network.ScrollMenuMessage;
+import net.foi1y.plusultrasquared.network.ExplosiontestMessage;
 import net.foi1y.plusultrasquared.PlusultrasquaredMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -34,11 +35,25 @@ public class PlusultrasquaredModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping EXPLOSIONTEST = new KeyMapping("key.plusultrasquared.explosiontest", GLFW.GLFW_KEY_Z, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PlusultrasquaredMod.PACKET_HANDLER.sendToServer(new ExplosiontestMessage(0, 0));
+				ExplosiontestMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(USE_ABILITY);
 		event.register(SCROLL_MENU);
+		event.register(EXPLOSIONTEST);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -47,6 +62,7 @@ public class PlusultrasquaredModKeyMappings {
 		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
 				SCROLL_MENU.consumeClick();
+				EXPLOSIONTEST.consumeClick();
 			}
 		}
 	}

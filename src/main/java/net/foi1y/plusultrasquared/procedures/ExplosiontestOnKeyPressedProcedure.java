@@ -15,7 +15,7 @@ import net.foi1y.plusultrasquared.network.PlusultrasquaredModVariables;
 import java.util.List;
 import java.util.Comparator;
 
-public class StungrenadeProcedure {
+public class ExplosiontestOnKeyPressedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;

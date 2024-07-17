@@ -1,7 +1,12 @@
 {
   "effect.plusultrasquared.reverse_heal": "Regen",
+  "item.plusultrasquared.black_hole_2_spawn_egg": "Blackhole Spawn Egg",
   "key.plusultrasquared.use_ability": "Use Ability",
+  "entity.plusultrasquared.blackhole": "Blackhole",
+  "entity.plusultrasquared.black_hole_2": "Blackhole",
   "key.plusultrasquared.scroll_menu": "Scroll Menu",
+  "item.plusultrasquared.blackhole_spawn_egg": "Blackhole Spawn Egg",
+  "key.plusultrasquared.explosiontest": "Explosiontest",
   "item.plusultrasquared.testruns": "Testruns",
   "item.plusultrasquared.a": "A"
 }

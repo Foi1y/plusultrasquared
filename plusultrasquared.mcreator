@@ -800,6 +800,388 @@
         ]
       },
       "path": "~/Custom Quirk ideas for the future/Air Walk"
+    },
+    {
+      "name": "SelfDetonationTrigger1",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "self_detonation_trigger_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/SelfDetonationTrigger1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Custom Quirk ideas for the future/Self Detonation"
+    },
+    {
+      "name": "Blackhole",
+      "type": "livingentity",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackhole",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/client/renderer/BlackholeRenderer.java",
+          "src/main/java/net/foi1y/plusultrasquared/entity/BlackholeEntity.java",
+          "src/main/resources/assets/plusultrasquared/models/item/blackhole_spawn_egg.json"
+        ]
+      },
+      "path": "~/Custom Quirk ideas for the future/Black Hole"
+    },
+    {
+      "name": "BlackholeOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackhole_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/BlackholeOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Custom Quirk ideas for the future/Black Hole"
+    },
+    {
+      "name": "BlackHoleBall",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_hole_ball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/BlackHoleBallProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Custom Quirk ideas for the future/Black Hole"
+    },
+    {
+      "name": "SIngularity",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_ingularity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/SIngularityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Custom Quirk ideas for the future/Black Hole"
+    },
+    {
+      "name": "BlackHole2",
+      "type": "livingentity",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_hole_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/entity/BlackHole2Entity.java",
+          "src/main/resources/assets/plusultrasquared/models/item/black_hole_2_spawn_egg.json",
+          "src/main/java/net/foi1y/plusultrasquared/client/renderer/BlackHole2Renderer.java"
+        ]
+      },
+      "path": "~/Custom Quirk ideas for the future/Black Hole"
+    },
+    {
+      "name": "BlackHole2OnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_hole_2_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/BlackHole2OnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Custom Quirk ideas for the future/Black Hole"
+    },
+    {
+      "name": "Vacuum",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vacuum",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/VacuumProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Custom Quirk ideas for the future/Black Hole"
+    },
+    {
+      "name": "ExplosiontestOnKeyPressed",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosiontest_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/ExplosiontestOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quirks/Explosion"
+    },
+    {
+      "name": "Explosiontest",
+      "type": "keybind",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosiontest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/network/ExplosiontestMessage.java"
+        ]
+      },
+      "path": "~/Quirks/Explosion"
+    },
+    {
+      "name": "LandmineBlast",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "landmine_blast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/LandmineBlastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quirks/Explosion"
+    },
+    {
+      "name": "ApShot",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ap_shot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/ApShotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quirks/Explosion"
+    },
+    {
+      "name": "ExplosionFlight",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosion_flight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/foi1y/plusultrasquared/procedures/ExplosionFlightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quirks/Explosion"
     }
   ],
   "variable_elements": [
@@ -826,8 +1208,13 @@
   "language_map": {
     "en_us": {
       "effect.plusultrasquared.reverse_heal": "Regen",
+      "item.plusultrasquared.black_hole_2_spawn_egg": "Blackhole Spawn Egg",
       "key.plusultrasquared.use_ability": "Use Ability",
+      "entity.plusultrasquared.blackhole": "Blackhole",
+      "entity.plusultrasquared.black_hole_2": "Blackhole",
       "key.plusultrasquared.scroll_menu": "Scroll Menu",
+      "item.plusultrasquared.blackhole_spawn_egg": "Blackhole Spawn Egg",
+      "key.plusultrasquared.explosiontest": "Explosiontest",
       "item.plusultrasquared.testruns": "Testruns",
       "item.plusultrasquared.a": "A"
     }
@@ -873,6 +1260,14 @@
           },
           {
             "name": "Air Walk",
+            "children": []
+          },
+          {
+            "name": "Self Detonation",
+            "children": []
+          },
+          {
+            "name": "Black Hole",
             "children": []
           }
         ]
